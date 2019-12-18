@@ -1,5 +1,7 @@
 # Piscina 42 São Paulo (18/11/2019 a 13/12/2019)
-A piscina é a terceira fase do processo seletivo para entrar na escola 42, mais que uma estapa é uma  experiência sensacional, recomendo muito participarem.
+A piscina é a terceira fase do processo seletivo para entrar na escola 42, mais que uma etapa, é uma experiência sensacional, recomendo muito participarem.
+#Para saber mais:
+Acesse https://www.42sp.org.br/
 ## Você vai encontrar:
 A solução dada por mim, os arquivos adicionais e assunto de todos projetos propostos na piscina.
 ## Não copie, aprenda.
