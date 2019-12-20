@@ -1,0 +1,54 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r10p4.42sp.org.br
+Darwin 18.6.0 x86_64
+$> date
+Fri Nov 29 13:27:27 -03 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-piscine-exam-01/exam_20191129/dnascime
+
+= Git history ==================================================================
+$> git -C /tmp/tmpn0dO4F/user log --pretty='%H - %an, %ad : %s'
+b062072c96694704de428cb12d1ec5e231524b7e - Exam 42, Fri Nov 29 13:18:10 2019 -0300 : Rev print 7
+baa8438f566f4656dd89d7a3df44a6ace3bad6ae - Exam 42, Fri Nov 29 13:10:27 2019 -0300 : rev print 6
+d9de702da6ae0a674f235959b5708b69109f358a - Exam 42, Fri Nov 29 13:05:35 2019 -0300 : Rev print 5
+3871311eb4469d652e1c2765d062a06b195a3586 - Exam 42, Fri Nov 29 11:54:34 2019 -0300 : Rev print
+90b62b7ff74fd345b95e761308381efa623de307 - Exam 42, Fri Nov 29 10:11:35 2019 -0300 : Only Z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpn0dO4F/user
+total 8
+-rw-r--r--  1 root  wheel  1160 Nov 29 13:27 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Nov 29 13:27 only_z
+drwxr-xr-x  3 root  wheel    96 Nov 29 13:27 rev_print
+
+/tmp/tmpn0dO4F/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1000 Nov 29 13:27 only_z.c
+
+/tmp/tmpn0dO4F/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1214 Nov 29 13:27 rev_print.c
+ 
+= rev_print ====================================================================
+$> gcc -Wextra -Wall -Werror main.c rev_print.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ijpde4gvfec14qlu29g885gc 
+Command './ijpde4gvfec14qlu29g885gc ' got killed by a Bus error (Signal -10)
+Grade: 0
+
+= Final grade: 0 ===============================================================

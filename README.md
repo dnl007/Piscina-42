@@ -34,3 +34,5 @@ Quando fizer um exercício e não conseguir explicar ou reescrever o código dur
 | Exam02        | [three levels done]       | [SUCCESS - 42%]   |
 | BSQ           | [Big Square]              | [FAIL - 0%]       |
 | Final Exam    | [five levels done]        | [SUCCESS - 30%]   |
+
+Aprovado \\o//

@@ -1,0 +1,49 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c1r5p3.42sp.org.br
+Darwin 18.6.0 x86_64
+$> date
+Fri Nov 22 11:35:02 -03 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-piscine-exam-00/exam_20191122/dnascime
+
+= Git history ==================================================================
+$> git -C /tmp/tmphD2c3p/user log --pretty='%H - %an, %ad : %s'
+1d62cd53c99ed4f0dddfe78993cd60558d6f9fae - Exam 42, Fri Nov 22 11:32:59 2019 -0300 : 2nd Only a
+fd7bf8366b8628a28dc8e735c41e994be9ad16cc - Exam 42, Fri Nov 22 11:29:26 2019 -0300 : only a
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmphD2c3p/user
+total 8
+-rw-r--r--  1 root  wheel  432 Nov 22 11:35 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Nov 22 11:35 only_a
+
+/tmp/tmphD2c3p/user/only_a:
+total 8
+-rw-r--r--  1 root  wheel  974 Nov 22 11:35 only_a.c
+ 
+= only_a =======================================================================
+$> gcc -Wextra -Wall -Werror only_a.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

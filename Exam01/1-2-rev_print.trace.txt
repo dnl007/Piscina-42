@@ -1,0 +1,51 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c3r8p3.42sp.org.br
+Darwin 18.6.0 x86_64
+$> date
+Fri Nov 29 12:18:09 -03 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-piscine-exam-01/exam_20191129/dnascime
+
+= Git history ==================================================================
+$> git -C /tmp/tmpk2mz0o/user log --pretty='%H - %an, %ad : %s'
+3871311eb4469d652e1c2765d062a06b195a3586 - Exam 42, Fri Nov 29 11:54:34 2019 -0300 : Rev print
+90b62b7ff74fd345b95e761308381efa623de307 - Exam 42, Fri Nov 29 10:11:35 2019 -0300 : Only Z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpk2mz0o/user
+total 8
+-rw-r--r--  1 root  wheel  459 Nov 29 12:18 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Nov 29 12:18 only_z
+drwxr-xr-x  3 root  wheel   96 Nov 29 12:18 rev_print
+
+/tmp/tmpk2mz0o/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1000 Nov 29 12:18 only_z.c
+
+/tmp/tmpk2mz0o/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1152 Nov 29 12:18 rev_print.c
+ 
+= rev_print ====================================================================
+$> gcc -Wextra -Wall -Werror main.c rev_print.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ibj5nf0ab34yvwgllq0vvd42 
+Command './ibj5nf0ab34yvwgllq0vvd42 ' got killed by a Bus error (Signal -10)
+Grade: 0
+
+= Final grade: 0 ===============================================================
